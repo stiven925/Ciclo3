@@ -1,0 +1,61 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26/09/2021, 7:32:39 p. m.
+    Author     : Usuario
+*/
+
+.container {
+  display: grid;
+  grid-template-columns: 0.4fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr 0.5fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header header header"
+    "landing_navbar section section"
+    "landing_navbar section section"
+    "landing_navbar footer footer";
+}
+
+.header { 
+    border: 1px black solid;
+    grid-area: header; 
+}
+
+.section { 
+    border: 1px black solid;
+    grid-area: section; 
+}
+
+.landing_navbar {
+  border: 1px black solid;  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "nav_01"
+    "nav_02";
+  grid-area: landing_navbar;
+  text-align: center;
+}
+
+.nav_01 {
+    border: 1px black solid;
+    grid-area: nav_01; 
+}
+
+.nav_02 {
+    border: 1px black solid;
+    grid-area: nav_02; 
+}
+
+.footer {
+    border: 1px black solid;
+    grid-area: footer; 
+}
